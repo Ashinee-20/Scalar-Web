@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 style="font-size: x-large; color: #386d5a;">Social Computing and Language Analytics Research Group (SCaLAR)</h1>
+        <p style="font-size: medium; text-align: left">Department of Information Technology <br/> National Institute of Technology, Karnataka</p>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="people.html">People</a>
+        <a href="projects.html">Projects</a>
+        <a href="publication.html">Publications</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="news.html">News</a>
+        <a href="blogs.html">Blogs</a>
+        <a class="contact-us" href="#footer">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3 style="text-align: center">Coming Soon !!</h3>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="contact-details">
+            <p>E-mail: m_anandkumar@nitk.edu.in</p>
+            <p>Phone: +91-824-247-3118</p>
+            <p>Address: IT Department, NITK</p>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/your-linkedin-profile"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/SCaLAR-NITK"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.onscroll = function() { // Add a function to handle scroll events
+            var topnav = document.getElementById("myTopnav");
+
+            if (window.pageYOffset > 0) { // Adjust the scroll position as needed
+                topnav.classList.add("sticky");
+            } else {
+                topnav.classList.remove("sticky");
+            }
+        };
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 style="font-size: x-large; color: #386d5a;">Social Computing and Language Analytics Research Group (SCaLAR)</h1>
+        <p style="font-size: medium; text-align: left">Department of Information Technology <br/> National Institute of Technology, Karnataka</p>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="people.html">People</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="publication.html">Publications</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="news.html">News</a>
+        <a href="blogs.html">Blogs</a>
+        <a class="contact-us" href="#footer">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="layout">
+        <div class="publication">
+            <br>
+            <h2 style="color: #386d5a">Projects</h2>
+            <p style="margin-left: 40px; margin-right: 40px;">
+                <a href="#sponsored" style="color: black;">Sponsored Projects <i class="fa fa-link"></i></span></a><br/>
+                <a href="#significant" style="color: black;">Significant Projects <i class="fa fa-link"></i></span></a><br/>
+                <a href="#consultancy" style="color: black;">Consultancy Work <i class="fa fa-link"></i></span></a>
+            </p>
+
+
+            <br>
+            <div class="box">
+                <h2 id="sponsored" style="text-align: center; color: #386d5a;">Sponsored Projects</h2>
+                <div class="item">
+                    <ul>
+                        <li>"Computing Tools for Tamil Language Teaching and Learning" (Principal Investigator),  Project Cost- 20 Lakhs, funded by Tamil Virtual Academy (Govt-of-Tamilnadu) in 2017-2018.</li>
+                        <li>Malayalam Wordnet (Co-Investigator), Project Cost - 32 Lakhs, funded by Diety, Govt of INDIA in 2014.</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+                <h2 id="significant" style="text-align: center; color: #386d5a;">Significant Projects</h2>
+                <div class="item">
+                    <ul>
+                        <li>Hate Speech detection Code-Mixed Corpora for Tamil</li>
+                        <li>Developed POS-Tagger and Chunker for Tamil.</li>
+                        <li>Introduced a Novel method for Morphological Analyzer using Machine Learning (Tamil,  Malayalam, Kannada, and Telugu).</li>
+                        <li>Morphological Generator for Tamil, Malayalam and Telugu.</li>
+                        <li>Verb Conjugator for Tamil.</li>
+                        <li>Dependency Parser for Tamil.</li>
+                        <li>Morphology-based Statistical Machine Translation for English to Tamil.</li>    
+                        <li>Code-Mixed POS Tagger for Indian Languages.</li>    
+                        <li>NER for Tamil Social media Text</li>    
+                        <li>Paraphrase Detection corpora created for (Tamil, Malayalam, Hindi and Punjabi)</li>                                
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+                <h2 id="consultancy" style="text-align: center; color: #386d5a;">Consultancy Work</h2>
+                <div class="item">
+                    <ul>
+                        <li>"Structured content extraction from preformatted documents and study materials", Rs. 1.18 Lakhs, Edumeister (US), 2020</li>
+                        <li>"Subtitle Translation System" , Rs. 4.4 Lakhs, Sharp Software Development,, 2014</li>    
+                        <li>Named Entity Recognition for Tamil and Paraphrase Identification for Tamil, Rs. 1.2 Lakhs, CLTP-Srilanka, 2017</li>    
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="contact-details">
+            <p>E-mail: m_anandkumar@nitk.edu.in</p>
+            <p>Phone: +91-824-247-3118</p>
+            <p>Address: IT Department, NITK</p>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/your-linkedin-profile"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/SCaLAR-NITK"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.onscroll = function() { // Add a function to handle scroll events
+            var topnav = document.getElementById("myTopnav");
+
+            if (window.pageYOffset > 0) { // Adjust the scroll position as needed
+                topnav.classList.add("sticky");
+            } else {
+                topnav.classList.remove("sticky");
+            }
+        };
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
